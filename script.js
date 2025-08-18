@@ -2,7 +2,7 @@
 const RESULT_URLS = {
   "Black Belt System": "https://www.kosenjudoonline.com/kosen-judo-black-belt-system",
   "Kosen Judo Technique Video": "https://www.kosenjudoonline.com/kosen-judo-technique-video",
-  "Judo Technique Video": "Kosen Judo: Learn Authentic Kosen Judo With Gatame Online",
+  "Judo Technique Video": "https://www.kosenjudoonline.com/judo-technique-video-coming-soon",
 };
 
 /* ===== 2) TSVを読み込んで辞書化 =====
