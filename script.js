@@ -1,7 +1,7 @@
 /* ===== 1) 結果LPのURL（実LPに差し替え） ===== */
 const RESULT_URLS = {
-  "Black Belt System": "https://www.kosenjudoonline.com/kosen-judo-black-belt-system",
-  "Kosen Judo Technique Video": "https://www.kosenjudoonline.com/kosen-judo-technique-video",
+  "Black Belt System": "https://www.kosenjudoonline.com/diagnosis-results-bbs",
+  "Kosen Judo Technique Video": "https://www.kosenjudoonline.com/diagnosis-results-bbs-1",
   "Judo Technique Video": "https://www.kosenjudoonline.com/judo-technique-video-coming-soon",
 };
 
