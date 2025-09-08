@@ -123,14 +123,23 @@ button#submitBtn:disabled{ opacity: .6; cursor: not-allowed; box-shadow: none; }
 }
 
 /* ====== Hero Background (.bg-top のときのみ) ====== */
-body.bg-top{
-  background: transparent !important;
-  overflow-x: hidden;
-  position: relative;
+:root {
+  --hero-desktop: url("./images/bg-top-desktop-1920.jpeg");
+  --hero-mobile:  url("./images/bg-top-mobile-1080.jpeg");
+  --hero-dim: 0.42;
 }
-body.bg-top::before{
+
+body.bg-top {
+  background: transparent !important;
+  position: relative;
+  overflow-x: hidden;
+}
+.wrap, .card { position: relative; z-index: 1; }
+
+body.bg-top::before {
   content: "";
-  position: fixed; inset: 0;
+  position: fixed;
+  inset: 0;
   z-index: 0;
   background:
     linear-gradient(
@@ -143,15 +152,9 @@ body.bg-top::before{
   filter: saturate(1.05) contrast(1.05) blur(1.2px);
   pointer-events: none;
 }
-body.bg-top .card{
-  background: rgba(255,255,255,0.88);
-  backdrop-filter: saturate(1.1) blur(2px);
-  -webkit-backdrop-filter: saturate(1.1) blur(2px);
-  border: 1px solid rgba(226,232,255,0.85);
-  box-shadow: 0 10px 28px rgba(16, 24, 40, 0.16);
-}
-@media (max-width: 900px){
-  body.bg-top::before{
+
+@media (max-width: 900px) {
+  body.bg-top::before {
     background:
       linear-gradient(
         to bottom,
