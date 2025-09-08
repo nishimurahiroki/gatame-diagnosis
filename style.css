@@ -126,7 +126,7 @@ button#submitBtn:disabled{ opacity: .6; cursor: not-allowed; box-shadow: none; }
 :root {
   --hero-desktop: url("./images/bg-top-desktop-1920.jpeg");
   --hero-mobile:  url("./images/bg-top-mobile-1080.jpeg");
-  --hero-dim: 0.42;
+  --hero-dim: 0;
 }
 
 body.bg-top {
