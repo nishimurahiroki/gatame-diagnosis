@@ -166,4 +166,3 @@ body.bg-top::before {
     filter: saturate(1.05) contrast(1.05) blur(1.4px);
   }
 }
-
