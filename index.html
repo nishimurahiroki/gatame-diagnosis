@@ -4,9 +4,15 @@
   <meta charset="utf-8">
   <title>Find Your Best Training Plan with GATAME in 30 Seconds</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css?v=3">
+
+  <!-- 背景画像のプリロード（実在するファイルに修正） -->
+  <link rel="preload" as="image" href="./bg-top-desktop-1920.jpg" imagesizes="100vw">
+  <link rel="preload" as="image" href="./bg-top-mobile-1080.jpg" imagesizes="100vw" media="(max-width: 900px)">
 </head>
-<body>
+
+<!-- 背景を有効化：.bg-top -->
+<body class="bg-top">
   <main class="wrap">
     <section class="card" aria-labelledby="title">
       <h1 id="title">Find Your Best Training Plan with GATAME <br>in 30 Seconds</h1>
@@ -59,7 +65,6 @@
       <!-- ?mode=preview でページ内結果を表示（デバッグ用） -->
       <div id="preview" class="preview" hidden></div>
     </section>
-    <div class="bg-dup" aria-hidden="true"></div>
   </main>
   <script src="./script.js"></script>
 </body>
