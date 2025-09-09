@@ -70,7 +70,7 @@ form.addEventListener('submit', (e) => {
   const fd = new FormData(form);
   const vals = ['q1','q2','q3','q4','q5'].map(n => fd.get(n));
   if (vals.some(v => !v)) {
-    msg.textContent = '未回答の質問があります。すべて選択してください。';
+    msg.textContent = 'There are unanswered questions. Please select all.';
     return;
   }
   const key = vals.join('|'); // 例: "A|B|C|A|C"
@@ -94,6 +94,6 @@ form.addEventListener('submit', (e) => {
   }
 
   btn.disabled = true;
-  msg.textContent = '判定中...';
+  msg.textContent = 'Judging...';
   location.href = url; // 即リダイレクト
 });
